@@ -108,6 +108,8 @@
 #include "file_path.hpp"
 #include "ff.h"
 
+#include "ui_hello_world.hpp"
+
 #include <locale>
 #include <codecvt>
 
@@ -205,6 +207,7 @@ const NavigationView::AppList NavigationView::appList = {
     // Dangerous apps.
     {nullptr, "Flash Utility", UTILITIES, Color::red(), &bitmap_icon_temperature, new ViewFactory<FlashUtilityView>()},
     {nullptr, "Wipe SD card", UTILITIES, Color::red(), &bitmap_icon_tools_wipesd, new ViewFactory<WipeSDView>()},
+    {"hellow", "Hello World", UTILITIES, Color::green(), &bitmap_icon_scanner, new ViewFactory<NewAppView>()},
 };
 
 const NavigationView::AppMap NavigationView::appMap = generate_app_map(NavigationView::appList);
