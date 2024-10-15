@@ -106,10 +106,7 @@ set(EXTCPPSRC
 	#acars
 	external/acars_rx/main.cpp
 	external/acars_rx/acars_app.cpp
-
-	#newexternalapp
-	external/newexternalapp/main.cpp
-	external/newexternalapp/ui_newexternalapp.cpp
+	
 )
 
 set(EXTAPPLIST
@@ -137,6 +134,5 @@ set(EXTAPPLIST
 	morse_tx
 	sstvtx
 	random_password
-	newexternalapp
 	#acars_rx
 )
